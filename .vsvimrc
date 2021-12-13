@@ -35,6 +35,8 @@ nnoremap <leader>ca :vsc View.QuickActions<CR>
 nnoremap <leader>cR :vsc Refactor.Rename<CR>
 nnoremap <leader>cn :vsc Edit.NextHighlightedReference<CR>
 nnoremap <leader>cN :vsc Edit.PreviousHighlightedReference<CR>
+vmap <leader>cn :vsc Edit.NextHighlightedReference<CR>
+vmap <leader>cN :vsc Edit.PreviousHighlightedReference<CR>
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cC :vsc Edit.UncommentSelection<CR>
 vmap <leader>cc :vsc Edit.CommentSelection<CR>
