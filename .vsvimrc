@@ -41,6 +41,10 @@ nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cC :vsc Edit.UncommentSelection<CR>
 vmap <leader>cc :vsc Edit.CommentSelection<CR>
 vmap <leader>cC :vsc Edit.UncommentSelection<CR>
+nnoremap <leader>cf :vsc Edit.CollapseCurrentRegion<CR>
+nnoremap <leader>cF :vsc Edit.CollapseAllOutlining<CR>
+nnoremap <leader>ce :vsc Edit.ExpandCurrentRegion<CR>
+nnoremap <leader>cE :vsc Edit.ExpandAllOutlining<CR>
 
 " File (f)
 nnoremap <leader>fs :vsc File.SaveSelectedItems<CR>
