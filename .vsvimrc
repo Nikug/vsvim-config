@@ -52,11 +52,14 @@ nnoremap <leader>cE :vsc Edit.ExpandAllOutlining<CR>
 
 " File (f)
 nnoremap <leader>fs :vsc File.SaveSelectedItems<CR>
-nnoremap <leader>fS :vsc File.SaveAll<CR>
+nnoremap <leader>fa :vsc File.SaveAll<CR>
 
 " Debug (d)
 nnoremap <leader>db :vsc Debug.ToggleBreakpoint<CR>
 nnoremap <leader>dk :vsc Debug.DeleteAllBreakpoints<CR>
+
+" Navigation / Go to (g)
+nmap <leader>ge :vsc View.NextError<CR>
 
 " General 
 nnoremap <leader><leader> :vsc Edit.GoToAll<CR>
