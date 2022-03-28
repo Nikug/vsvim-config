@@ -68,3 +68,8 @@ nnoremap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
 nnoremap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
 vmap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
 vmap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
+
+" Macros
+let @u=":source ~/.vim/.vsvimrc\<CR>"
+let @x=":%s/using NUnit\.Framework/using Xunit/g\<CR>:%s/\\[Test\\]\\|\\[TestCase\\]/[Fact]/g\<CR>:g/\\[TestClass\\]\\|\\[TestFixture\\]/d\<CR>:%s/Assert.AreEqual/Assert.Equal/g\<CR>:%s/Assert.IsTrue/Assert.True/g\<CR>:%s/Assert.IsFalse/Assert.False/g\<CR>:%s/Assert.IsNotNull/Assert.NotNull/g\<CR>:%s/Assert.IsNull/Assert.Null/g\<CR>"
+let @c="gg/class\<CR>w\"ayw/\\[SetUp\\]\<CR>ddwdwdwi \<Esc>i\<Esc>\"ap"
