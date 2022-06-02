@@ -1,14 +1,14 @@
-" Settings
+""" Settings
 set ignorecase
 set smartcase
 set incsearch
 
-" Key mapping
+""" Key mapping
 let mapleader=" "
 set nottimeout
 set notimeout
 
-" Window controls (w)
+""" Window controls (w)
 " Split vertical
 nnoremap <leader>wv <C-w>v 
 
@@ -24,13 +24,13 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j 
 nnoremap <leader>k <C-w>k 
 
-" Tab controls (t)
+""" Tab controls (t)
 nnoremap <leader>l :vsc Window.NextTab<CR> 
 nnoremap <leader>h :vsc Window.PreviousTab<CR> 
 nnoremap <leader>tk :vsc Window.CloseDocumentWindow<CR> 
 " Add moving tabs between windows here if possible
 
-" Code (c)
+""" Code (c)
 nnoremap <leader>cd :vsc Edit.GoToDefinition<CR>
 nnoremap <leader>ci :vsc Edit.GoToImplementation<CR>
 nnoremap <leader>cr :vsc Edit.FindAllReferences<CR>
@@ -50,18 +50,32 @@ nnoremap <leader>cF :vsc Edit.CollapseAllOutlining<CR>
 nnoremap <leader>ce :vsc Edit.ExpandCurrentRegion<CR>
 nnoremap <leader>cE :vsc Edit.ExpandAllOutlining<CR>
 
-" File (f)
+""" File (f)
 nnoremap <leader>fs :vsc File.SaveSelectedItems<CR>
 nnoremap <leader>fa :vsc File.SaveAll<CR>
 
-" Debug (d)
+""" Debug (d)
 nnoremap <leader>db :vsc Debug.ToggleBreakpoint<CR>
 nnoremap <leader>dk :vsc Debug.DeleteAllBreakpoints<CR>
 
-" Navigation / Go to (g)
+""" Navigation / Go to (g)
 nmap <leader>ge :vsc View.NextError<CR>
 
-" General 
+""" Select (s)
+" Select all
+nnoremap <leader>sa ggvG
+
+" Select all and yank
+nnoremap <leader>sA mmggVGy'm
+
+" Copy selection to clipboard
+xnoremap <leader>sc :vsc Edit.Copy<CR>
+
+" Paste from clipboard
+nmap <leader>sp "+p
+" xnoremap <leader>sp "+p
+
+""" General 
 nnoremap <leader><leader> :vsc Edit.GoToAll<CR>
 
 nnoremap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
@@ -69,7 +83,7 @@ nnoremap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
 vmap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
 vmap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
 
-" Macros
+""" Macros
 let @u=":source ~/.vim/.vsvimrc\<CR>"
 let @x=":%s/using NUnit\.Framework/using Xunit/g\<CR>:%s/\\[Test\\]\\|\\[TestCase\\]/[Fact]/g\<CR>:g/\\[TestClass\\]\\|\\[TestFixture\\]/d\<CR>:%s/Assert.AreEqual/Assert.Equal/g\<CR>:%s/Assert.IsTrue/Assert.True/g\<CR>:%s/Assert.IsFalse/Assert.False/g\<CR>:%s/Assert.IsNotNull/Assert.NotNull/g\<CR>:%s/Assert.IsNull/Assert.Null/g\<CR>"
 let @c="gg/class\<CR>w\"ayw/\\[SetUp\\]\<CR>ddwdwdwi \<Esc>i\<Esc>\"ap"
