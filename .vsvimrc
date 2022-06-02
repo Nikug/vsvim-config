@@ -25,8 +25,8 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k 
 
 " Tab controls (t)
-nnoremap <leader>tl :vsc Window.NextTab<CR> 
-nnoremap <leader>th :vsc Window.PreviousTab<CR> 
+nnoremap <leader>l :vsc Window.NextTab<CR> 
+nnoremap <leader>h :vsc Window.PreviousTab<CR> 
 nnoremap <leader>tk :vsc Window.CloseDocumentWindow<CR> 
 " Add moving tabs between windows here if possible
 
