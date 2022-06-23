@@ -41,10 +41,10 @@ nnoremap <leader>cr :vsc Edit.FindAllReferences<CR>
 nnoremap <leader>ch :vsc Edit.QuickInfo<CR>
 nnoremap <leader>ca :vsc View.QuickActions<CR>
 nnoremap <leader>cR :vsc Refactor.Rename<CR>
-nnoremap <leader>cn :vsc Edit.NextHighlightedReference<CR>
-nnoremap <leader>cN :vsc Edit.PreviousHighlightedReference<CR>
-vmap <leader>cn :vsc Edit.NextHighlightedReference<CR>
-vmap <leader>cN :vsc Edit.PreviousHighlightedReference<CR>
+nnoremap <leader>cn :vsc Edit.NextHighlightedReference<CR><Esc>
+nnoremap <leader>cN :vsc Edit.PreviousHighlightedReference<CR><Esc>
+vmap <leader>cn :vsc Edit.NextHighlightedReference<CR><Esc>
+vmap <leader>cN :vsc Edit.PreviousHighlightedReference<CR><Esc>
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cC :vsc Edit.UncommentSelection<CR>
 vmap <leader>cc :vsc Edit.CommentSelection<CR>
@@ -66,6 +66,13 @@ nnoremap <leader>fn :vsc Project.AddNewItem<CR>
 """ Debug (d)
 nnoremap <leader>db :vsc Debug.ToggleBreakpoint<CR>
 nnoremap <leader>dk :vsc Debug.DeleteAllBreakpoints<CR>
+nnoremap <leader>da :vsc Debug.AttachtoProcess<CR>
+nnoremap <leader>dr :vsc Debug.ReattachtoProcess<CR>
+
+
+""" Build (b)
+nnoremap <leader>bs :vsc Build.BuildSolution<CR>
+nnoremap <leader>bc :vsc Build.Compile<CR>
 
 
 """ Navigation / Go to (g)
