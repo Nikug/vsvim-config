@@ -2,6 +2,7 @@
 set ignorecase
 set smartcase
 set incsearch
+set scrolloff=4
 
 
 """ Key mapping
