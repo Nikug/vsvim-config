@@ -59,7 +59,8 @@ nnoremap <leader>cE :vsc Edit.ExpandAllOutlining<CR>
 """ File (f)
 nnoremap <leader>fs :vsc Edit.FormatDocument<CR>:vsc File.SaveSelectedItems<CR>
 nnoremap <leader>fw :vsc File.SaveSelectedItems<CR>
-nnoremap <leader>ff :vsc Edit.FormatDocument<CR>
+nnoremap <leader>ff :vsc Edit.SortUsings<CR>:vsc Edit.FormatDocument<CR>
+nnoremap <leader>fF :vsc Edit.FormatDocument<CR>
 nnoremap <leader>fa :vsc File.SaveAll<CR>
 nnoremap <leader>fn :vsc Project.AddNewItem<CR>
 
