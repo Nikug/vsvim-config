@@ -32,6 +32,7 @@ nnoremap <leader>wk <C-w>k
 nnoremap <leader>l :vsc Window.NextTab<CR> 
 nnoremap <leader>h :vsc Window.PreviousTab<CR> 
 nnoremap <leader>tk :vsc Window.CloseDocumentWindow<CR> 
+nnoremap <leader>to :vsc File.CloseAllButThis<CR> 
 " Add moving tabs between windows here if possible
 
 
