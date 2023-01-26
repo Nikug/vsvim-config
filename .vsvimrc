@@ -99,6 +99,8 @@ nmap <leader>sp "+p
 
 """ General 
 nnoremap <leader><leader> :vsc Edit.GoToAll<CR>
+nnoremap <leader>/ :vsc Edit.FindinFiles<CR>
+xnoremap <leader>/ :vsc Edit.FindinFiles<CR>
 nnoremap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
 nnoremap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
 vmap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
