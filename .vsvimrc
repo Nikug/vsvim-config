@@ -12,50 +12,21 @@ set nottimeout
 set notimeout
 
 
-""" Window controls (w)
-" Split vertical
-nnoremap <leader>wv <C-w>v 
-
-" Split horizontal
-nnoremap <leader>ws <C-w>s 
-
-" Kill window
-nnoremap <leader>wk <C-w>c 
-
-" Move to between windows
-nnoremap <leader>wl <C-w>l 
-nnoremap <leader>wh <C-w>h 
-nnoremap <leader>wj <C-w>j 
-nnoremap <leader>wk <C-w>k 
-
-
 """ Tab controls (t)
-nnoremap <leader>l :vsc Window.NextTab<CR> 
-nnoremap <leader>h :vsc Window.PreviousTab<CR> 
-nnoremap <leader>tk :vsc Window.CloseDocumentWindow<CR> 
 nnoremap <leader>to :vsc File.CloseAllButThis<CR> 
-" Add moving tabs between windows here if possible
 
 
 """ Code (c)
-nnoremap <leader>cd :vsc Edit.GoToDefinition<CR>
-nnoremap <leader>ci :vsc Edit.GoToImplementation<CR>
-nnoremap <leader>cr :vsc Edit.FindAllReferences<CR>
-nnoremap <leader>ch :vsc Edit.QuickInfo<CR>
+nnoremap gd :vsc Edit.GoToDefinition<CR>
+nnoremap gi :vsc Edit.GoToImplementation<CR>
+nnoremap gr :vsc Edit.FindAllReferences<CR>
+nnoremap K :vsc Edit.QuickInfo<CR>
 nnoremap <leader>ca :vsc View.QuickActions<CR>
 nnoremap <leader>cR :vsc Refactor.Rename<CR>
-nnoremap <leader>cn :vsc Edit.NextHighlightedReference<CR><Esc>
-nnoremap <leader>cN :vsc Edit.PreviousHighlightedReference<CR><Esc>
-vmap <leader>cn :vsc Edit.NextHighlightedReference<CR><Esc>
-vmap <leader>cN :vsc Edit.PreviousHighlightedReference<CR><Esc>
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cC :vsc Edit.UncommentSelection<CR>
 vmap <leader>cc :vsc Edit.CommentSelection<CR>
 vmap <leader>cC :vsc Edit.UncommentSelection<CR>
-nnoremap <leader>cf :vsc Edit.CollapseCurrentRegion<CR>
-nnoremap <leader>cF :vsc Edit.CollapseAllOutlining<CR>
-nnoremap <leader>ce :vsc Edit.ExpandCurrentRegion<CR>
-nnoremap <leader>cE :vsc Edit.ExpandAllOutlining<CR>
 
 
 """ File (f)
@@ -106,6 +77,8 @@ nnoremap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
 nnoremap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
 vmap <M-j> :vsc Edit.MoveSelectedLinesDown<CR>
 vmap <M-k> :vsc Edit.MoveSelectedLinesUp<CR>
+nnoremap <C-o> :vsc View.NavigateBackward<CR>
+nnoremap <C-i> :vsc View.NavigateForward<CR>
 
 
 """ Macros
